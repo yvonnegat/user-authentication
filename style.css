@@ -1,0 +1,149 @@
+body{
+    margin: 0;
+    
+}
+.header1{
+    background-color: rgb(27, 176, 245);
+    height: 120px;
+    width: 100%;
+    margin-top: -25px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.image-container{
+    float: left;
+}
+
+.content{
+    width: 100%;
+    height:550px;
+    background-image: url(gallery/blackcatbackground.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+
+}
+.custom-button {
+    background-color: #3498db;
+    color: #000000;
+    font-size: 30px; 
+    padding: 20px 40px; 
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+    height:40px ;
+    width:300px ;
+}
+.custom-button:hover {
+    background-color: #ff0909; 
+}
+.sign {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.sign-container {
+    background-color: white;
+    border: 5px solid #3498db; /* Added 'solid' for the border style */
+    width: 75%;
+    display: flex;
+    justify-content: center; /* Adjusted to 'flex-start' */
+    align-items: center; /* Adjusted to 'flex-start' */
+    height: 500px;
+    font-size: 25px;
+    text-transform: capitalize;
+    
+}
+input[type="email"],
+input[type="password"] {
+    width: 300px;
+    height: 35px;
+    background-color: #bdbdbd;
+}
+
+.LOGIN{
+    background-color:#3498db ;
+    height: 35px;
+    width: 200px;
+}
+.LOGIN:hover{
+    background-color: #ff0909;
+    
+}
+
+.googlelogo{
+    font-size: 20px;
+    background-color: #ffffff;
+    height: 35px;
+    width: 300px;
+    border: #000000 solid 3px;
+    text-align: center;
+}
+.googlelogo:hover{
+    border: #ff0909 solid 3px;
+}
+
+.image-container {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    display: inline-block;
+    overflow: hidden; /* Ensure the zoomed image doesn't overflow the container */
+  }
+  
+  .image-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 400px;
+    background: rgba(70, 223, 250, 0.5); /* Initial color and opacity */
+    pointer-events: none;
+    transition: opacity 0.2s; /* Add a transition for smooth opacity changes */
+  }
+  
+  .image-container:hover::before {
+    opacity: 0; /* On hover, set opacity to 0 to make it disappear */
+  }
+  
+  /* Additional styles for the image (e.g., sizing) */
+  .image-container img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s; /* Add a transition for smooth scaling */
+  }
+  
+  .image-container:hover img {
+    transform: scale(1.1); /* On hover, scale the image to 1.1 times its original size */
+  }
+  .image-text {
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    top: 10px; /* Adjust the top, left, or other values to position the text as desired */
+    left: 10px; /* You can adjust these values as needed */
+    padding: 10px; /* Add padding for better appearance */
+}
+.image-container:hover h2 {
+    transform: scale(1.1); /* On hover, scale the image to 1.1 times its original size */
+  }
+  
+  
